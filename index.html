@@ -4,36 +4,40 @@
     <title>Noah Pratt</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab|Source+Code+Pro" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <header>
-            <h1 id="nav">Noah Pratt</h1>
-            <div id="nav">
-                <p style="float:right">
-                <a href="index.html">home</a> /
-                <a href="about.html">about</a> /
-                <a href="works.html">works</a> /
-                <a href="contact.html">contact</a>
-                </p>
-            </div>
-    </header>
+  <nav class="navbar navbar-expand-sm">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Noah Pratt</a>
 
-    <div id="box">
-        <h1 id="main" style="text-align: center; border-right: 5px solid white; margin-right: 20px">Hi, I&#39;m<br> Noah.</h1>
-        <p id="main" style="width: 50%;"> I&#39;m a design student passionate about art direction, web design, branding, and video production.</p>
-    </div>
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">about</a>
+      </li>
 
-    <div id="content">
-    <div class="photo">
-        <img class="img1" src="images/headshot.png" width="30%" alt="Kensington Market, Toronto">
-        <p>I&#39;m a motivated and hardworking individual, with a passion for helping others. I achieve my goals through perseverance, commitment, and responsibility. I get results by being a strong team member, learning by experience. and dedication in all roles. I volunteer on a global and local scale, and have been recognized as an outstanding member of the community.</p>
-    </div>
-    </div>
-
-    <footer>
-            <a href="https://www.instagram.com/noah_pratt/"><img src="images/instagram_icon.png" alt="instagram"></a>
-            <a href="https://www.facebook.com/noahlkpratt"><img src="images/facebook_icon.png" alt="facebook"></a>
-            <a href="https://www.linkedin.com/in/noahpratt/"><img src="images/linkedin_icon.png" alt="linkedin"></a>
-    </footer>
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          projects
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">contact</a>
+      </li>
+    </ul>
+  </nav>
 </body>
 </html>
