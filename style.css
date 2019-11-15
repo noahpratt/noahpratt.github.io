@@ -3,19 +3,23 @@ html {
   margin: auto;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
-  color: black;
+  color: #242424;
+}
+
+body {
+  margin: 0;
 }
 
 .nav {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 30px 0 0 0;
+  padding: 0 50px 0 0;
   overflow: hidden;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
   background: rgb(0,221,255);
-  background: linear-gradient(90deg, rgba(0,221,255,1) 0%, rgba(9,91,121,1) 100%);
+  background: linear-gradient(90deg, rgba(0,221,255,1) 0%, rgba(9,91,121,1) 75%);
 }
 
 .nav li a{
@@ -27,7 +31,7 @@ html {
 }
 
 .nav li a:hover, .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #086385;
 }
 
 li.dropdown {
@@ -44,7 +48,7 @@ li.dropdown {
 }
 
 .dropdown-content a {
-  	color: black !important;
+  	color: #242424 !important;
   	text-align: left !important;
   	padding: 12px 16px;
   	text-decoration: none;
@@ -58,26 +62,48 @@ li.dropdown {
   	flex-direction: column;
 }
 
-.half{
-	width: 50%;
-	text-align: right;
+.row {
+  margin: 75px auto 75px 22.5%;
+	display: flex;
+  flex-direction: row;
+  flex-wrap: row wrap;
+	justify-content: space-evenly;
+  align-items: center;
+}
+
+.title{
+  width: 40%;
+  min-width: 260px;
+  margin: 60px 0;
+  text-align: right;
+}
+
+.headshot {
+  width: 30%;
+}
+
+.headshot img {
+  width: 200px;
 }
 
 h1 {
 	font-weight: 700;
-	font-size: 72px;
+	font-size: 65px;
+  color: #242424;
+  margin: 20px 0px;
 }
 
 .card-row {
 	margin: 70px auto;
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 
 .card-row a{
 	text-decoration: none;
-	width: 25%;
+	width: 22%;
+  min-width: 180px;
 	color: black;
 }
 
@@ -98,7 +124,7 @@ h2 {
 
 .footer {
 	list-style-type: none;
-  margin: 20px auto 5px auto;
+  margin: 20px auto 5px 50px;
   padding: 0;
   overflow: hidden;
   display: flex;
@@ -107,15 +133,17 @@ h2 {
 }
 
 .footer li {
-	padding: 10px 10px 0px 10px;
+	padding: 10px;
 }
 
 .footer img {
-	width: 20px;
+	width: 25px;
 }
 
 #icon-attribution {
-	font-size: 10px;
+  margin-left: 50px;
+  padding-left: 10px;
+	font-size: 8px;
 }
 
 #icon-attribution a {
