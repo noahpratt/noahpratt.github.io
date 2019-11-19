@@ -1,34 +1,23 @@
 html {
-  max-width: 1200px;
+  max-width: 900px;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   color: #242424;
-  background-color: red;
-  margin: 30px;
-}
-
-body {
-  margin: margin: 30px;
+  margin: auto;
   background-color: white;
 }
 
-/*  list-style-type: none;
-  margin: 30px 0 0 0;
-  padding: 0 50px 0 0;
-  overflow: hidden;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  background: rgb(0,221,255);
-  background: linear-gradient(90deg, rgba(0,221,255,1) 0%, rgba(9,91,121,1) 75%);
-} */
+body {
+  background-color: white;
+  margin: 0 0 40px 0;
+  padding: 0;
+}
 
 #menu {
   list-style-type: none;
   margin: 30px 0 0 0;
-  padding: 0 50px 0 0;
-  position: fixed;
-  display: block;
+  padding: 0 !important;
+  max-width: 900px;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -36,12 +25,13 @@ body {
   background: rgb(0,221,255);
   background: linear-gradient(90deg, rgba(0,221,255,1) 0%, rgba(9,91,121,1) 75%);
   top: 0;
-  z-index: 9;
+  overflow: hidden;
 }
 
 #menu li a{
   display: inline-block;
   color: white;
+  float: left;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -49,6 +39,11 @@ body {
 
 #menu li a:hover, .dropdown:hover .dropbtn {
   background-color: #086385;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
 }
 
 li.dropdown {
@@ -61,10 +56,11 @@ li.dropdown {
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 9;
 }
 
 .dropdown-content a {
+  float: none;
   	color: #242424 !important;
   	text-align: left !important;
   	padding: 12px 16px;
@@ -75,12 +71,11 @@ li.dropdown {
 .dropdown-content a:hover {background-color: #f1f1f1;}
 
 .dropdown:hover .dropdown-content {
-  	display: flex;
-  	flex-direction: column;
+  	display: block;
 }
 
 .row {
-  margin: 75px auto 75px 22.5%;
+  margin: 7% auto 7% 22.5%;
 	display: flex;
   flex-direction: row;
   flex-wrap: row wrap;
@@ -91,7 +86,7 @@ li.dropdown {
 .title{
   width: 40%;
   min-width: 260px;
-  margin: 60px 0;
+  /* margin: 60px 0; */
   text-align: right;
 }
 
@@ -169,5 +164,5 @@ h2 {
 }
 
 #fullpage {
-  margin: auto 20%;
+  margin: auto 15% auto 20%;
 }

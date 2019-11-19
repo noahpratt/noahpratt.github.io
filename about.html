@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html id="theHTML">
 <head>
     <title>Noah Pratt - About</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab|Source+Code+Pro" rel="stylesheet">
@@ -74,10 +74,10 @@
     </div>
   </div>
 
-  <ul id="menu">
-    <li class="menu-links" href="#secondPage"><a href="#">Home</a></li>
-    <li class="menu-links" href="#secondPage"><a href="about.html">About</a></li>
-    <li class="menu-links" href="#secondPage" class="dropdown">
+  <ul id="menu" style="position: fixed">
+    <li class="menu-links"><a href="index.html">Home</a></li>
+    <li class="menu-links"><a href="about.html">About</a></li>
+    <li class="menu-links" class="dropdown">
       <a href="projects.html" class="dropbtn">Projects</a>
       <div class="dropdown-content">
         <a href="#">Project 1</a>
@@ -85,12 +85,37 @@
         <a href="#">Project 3</a>
       </div>
     </li>
-    <li class="menu-links" data-menuanchor="secondPage" href="#secondPage"><a href="contact.html">Contact</a></li>
+    <li class="menu-links"><a href="contact.html">Contact</a></li>
   </ul>
 
 
 
-<script>new fullpage('#fullpage', {
+<script>
+
+  window.onload = function(){
+    var hello = document.getElementById("theHTML");
+    var why = hello.currentStyle || window.getComputedStyle(hello);
+
+    var dots = document.getElementById("fp-nav").style.marginLeft;
+    dots = why.marginLeft;
+
+    console.log(dots, why.marginLeft);
+  };
+
+
+  window.onresize = function(){
+    var hello = document.getElementById("theHTML");
+    var why = hello.currentStyle || window.getComputedStyle(hello);
+
+    var dots = document.getElementById("fp-nav").style.marginLeft;
+    dots = why.marginLeft;
+
+    console.log(dots, why.marginLeft);
+  };
+
+
+
+new fullpage('#fullpage', {
   menu: '#menu',
   autoScrolling:true,
 	scrollHorizontally: true,
