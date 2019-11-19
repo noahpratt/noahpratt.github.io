@@ -1,17 +1,18 @@
 html {
   max-width: 1200px;
-  margin: auto;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   color: #242424;
+  background-color: red;
+  margin: 30px;
 }
 
 body {
-  margin: 0;
+  margin: margin: 30px;
+  background-color: white;
 }
 
-.nav {
-  list-style-type: none;
+/*  list-style-type: none;
   margin: 30px 0 0 0;
   padding: 0 50px 0 0;
   overflow: hidden;
@@ -20,9 +21,25 @@ body {
   justify-content: flex-end;
   background: rgb(0,221,255);
   background: linear-gradient(90deg, rgba(0,221,255,1) 0%, rgba(9,91,121,1) 75%);
+} */
+
+#menu {
+  list-style-type: none;
+  margin: 30px 0 0 0;
+  padding: 0 50px 0 0;
+  position: fixed;
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  background: rgb(0,221,255);
+  background: linear-gradient(90deg, rgba(0,221,255,1) 0%, rgba(9,91,121,1) 75%);
+  top: 0;
+  z-index: 9;
 }
 
-.nav li a{
+#menu li a{
   display: inline-block;
   color: white;
   text-align: center;
@@ -30,7 +47,7 @@ body {
   text-decoration: none;
 }
 
-.nav li a:hover, .dropdown:hover .dropbtn {
+#menu li a:hover, .dropdown:hover .dropbtn {
   background-color: #086385;
 }
 
@@ -149,4 +166,8 @@ h2 {
 #icon-attribution a {
 	text-decoration: none;
 	color: black;
+}
+
+#fullpage {
+  margin: auto 20%;
 }
