@@ -1,80 +1,12 @@
 <!DOCTYPE HTML>
-<html id="theHTML">
+<html>
 <head>
     <title>Noah Pratt - About</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab|Source+Code+Pro" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="fullpage.css" />
-    <script type="text/javascript" src="fullpage.js"></script>
 </head>
 <body>
-
-  <div id="fullpage" style="height: 100%; position: relative; touch-action: none; transform: translate3d(0px, 0px, 0px);">
-    <div class="section" data-tooltip="Section 1">
-        <p>I&#39;m a motivated and hardworking individual, with a passion for helping others. I achieve my goals through perseverance, commitment, and responsibility. I get results by being a strong team member, learning by experience. and dedication in all roles. I volunteer on a global and local scale, and have been recognized as an outstanding member of the community.</p>
-        <h2>Nice to meet you!</h2>
-        <p>I'm Noah, a 3rd year Global Business and Digital Arts student at the University of Waterloo.</p>
-        <p>I have a strong curiosity, and a passion for learning, currently holding a 4.0GPA. I have experience on
-           all mainstream Adobe CC programs, HTML/CS & JS, Project Management, branding on a global scale, and I'm
-           actively looking to learn more!</p>
-    </div>
-    <div class="section" data-tooltip="Section 2">
-        <h2>Volunteer Experience</h2>
-        <h3>Design Manager, <span id="location">HOBY World Leadership Congress</span></h3>
-        <p><i>Feb—July 2018, 2019</i></p>
-        <ul>
-            <li>Coordinate with the Marketing and Publicity team to establish and maintain brand management</li>
-            <li>Research and reinforce the needs of the organization, build an identity based on the tone and values of the event program</li>
-            <li>Learned time management, and how to schedule deliverables</li>
-        </ul>
-      </div>
-      <div class="section" data-tooltip="Section 3">
-        <h3>Co-Director of Junior Staff, <span id="location">HOBY Western Ontario</span></h3>
-        <p><i>Sept 2017—present</i></p>
-        <ul>
-            <li>Oversee the construction of the staff team alongside the seminar chair</li>
-            <li>Coordinate meetings and training modules with the staff members, ensure everyone receives the proper guidance for their position</li>
-            <li>Respond to staff questions and comments, manage schedule requests</li>
-        </ul>
-        </div>
-        <div class="section" data-tooltip="Section 4">
-        <h3>Campus Ambassador, <span id="location">University of Waterloo Stratford Campus</span></h3>
-        <p><i>Sept 2017—present</i></p>
-        <ul>
-            <li>Network with a variety of students, and encourage them to study at the University of Waterloo</li>
-            <li>Assist in digital media events, lead workshops for high-school students</li>
-        </ul>
-    </div>
-
-    <div class="section" data-tooltip="Section 5">
-        <h2>Work Experience</h2>
-        <h3>Server, <span id="location">Crossroads Board Game Café</span></h3>
-        <p><i>Oct 2018—present</i></p>
-      </div>
-      <div class="section" data-tooltip="Section 6">
-        <h3>Sales Associate, <span id="location">Virgin Mobile</span></h3>
-        <p><i>Feb 2018—May 2018</i></p>
-        <ul>
-            <li>Guide customers through plans and packages offered</li>
-            <li>Endorse/up-sell promotions based around their needs and usage</li>
-            <li>Customer service, responding to questions and concerns</li>
-        </ul>
-    </div>
-
-    <div class="section" data-tooltip="Section 7">
-        <h2>Education</h2>
-        <h3>Degree in Global Business and Digital Arts</h3>
-        <p>University of Waterloo, expected graduation in 2021</p>
-
-        <h3>Certificate in Media Fundamentals, with High Honours & 3.96 GPA</h3>
-        <p>Sheridan College, June 2016</p>
-
-        <h3>Ontario Scholar, Arts & Media SHSM</h3>
-        <p>South Huron District High School, June 2014</p>
-    </div>
-  </div>
-
-  <ul id="menu" style="position: fixed">
+  <ul id="menu">
     <li class="menu-links"><a href="index.html">Home</a></li>
     <li class="menu-links"><a href="about.html">About</a></li>
     <li class="menu-links" class="dropdown">
@@ -89,45 +21,47 @@
   </ul>
 
 
+  <div id="content">
+      <p>I&#39;m a motivated and hardworking individual, with a passion for helping others. I achieve my goals through perseverance, commitment, and responsibility. I get results by being a strong team member, learning by experience. and dedication in all roles. I volunteer on a global and local scale, and have been recognized as an outstanding member of the community.</p>
+      <h2>Nice to meet you!</h2>
+      <p>I'm Noah, a 3rd year Global Business and Digital Arts student at the University of Waterloo.</p>
+      <p>Sleepless student, creative thinker, and overall curious as to how things work.</p>
+      <p>I have a strong curiosity, and a passion for learning, currently holding a 4.0GPA. I have experience on
+         all mainstream Adobe CC programs, HTML/CS & JS, Project Management, branding on a global scale, and I'm
+         actively looking to learn more!</p>
+</div>
 
 <script>
+var slideIndex = 1;
+showDivs(slideIndex);
 
-  window.onload = function(){
-    var hello = document.getElementById("theHTML");
-    var why = hello.currentStyle || window.getComputedStyle(hello);
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
 
-    var dots = document.getElementById("fp-nav").style.marginLeft;
-    dots = why.marginLeft;
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
 
-    console.log(dots, why.marginLeft);
-  };
+    </div>
 
+    <ul class="footer">
+    <li><a href="https://www.facebook.com/noahlkpratt"><img src="img/facebook_icon.png"></a></li>
+    <li><a href="https://www.instagram.com/noah_pratt/"><img src="img/instagram_icon.png"></a></li>
+    <li><a href="https://www.linkedin.com/in/noahpratt/"><img src="img/linkedin_icon.png"></a></li>
+    <li><a href="https://github.com/noahpratt"><img src="img/github_icon.png"></a></li>
+  </ul>
 
-  window.onresize = function(){
-    var hello = document.getElementById("theHTML");
-    var why = hello.currentStyle || window.getComputedStyle(hello);
-
-    var dots = document.getElementById("fp-nav").style.marginLeft;
-    dots = why.marginLeft;
-
-    console.log(dots, why.marginLeft);
-  };
-
-
-
-new fullpage('#fullpage', {
-  menu: '#menu',
-  autoScrolling:true,
-	scrollHorizontally: true,
-  scrollingSpeed: 500,
-  navigation: true,
-  navigationPosition: 'left',
-
-  showActiveTooltip: true,
-});
-
-//methods
-fullpage_api.setAllowScrolling(true);</script>
-
+  <div id="icon-attribution">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+</body>
+</html>
 </body>
 </html>

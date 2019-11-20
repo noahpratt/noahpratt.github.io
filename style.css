@@ -1,5 +1,9 @@
+:root {
+  --screen-size: 1100px;
+}
+
 html {
-  max-width: 900px;
+  max-width: var(--screen-size);
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   color: #242424;
@@ -9,7 +13,7 @@ html {
 
 body {
   background-color: white;
-  margin: 0 0 40px 0;
+  margin: 0 auto 40px auto;
   padding: 0;
 }
 
@@ -17,7 +21,7 @@ body {
   list-style-type: none;
   margin: 30px 0 0 0;
   padding: 0 !important;
-  max-width: 900px;
+  max-width: var(--screen-size);
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -86,8 +90,21 @@ li.dropdown {
 .title{
   width: 40%;
   min-width: 260px;
-  /* margin: 60px 0; */
   text-align: right;
+  animation-name: titleLoad;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+}
+
+@keyframes titleLoad {
+  from {
+    opacity: 0;
+    transform: translateY(6%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .headshot {
@@ -98,9 +115,16 @@ li.dropdown {
   width: 200px;
 }
 
-h1 {
+.title h1 {
 	font-weight: 700;
 	font-size: 65px;
+  color: #242424;
+  margin: 20px 0px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 50px;
   color: #242424;
   margin: 20px 0px;
 }
@@ -165,4 +189,8 @@ h2 {
 
 #fullpage {
   margin: auto 15% auto 20%;
+}
+
+#content {
+  margin: auto 50px;
 }
