@@ -17,6 +17,10 @@ body {
   padding: 0;
 }
 
+p {
+  margin: 0;
+}
+
 #menu {
   list-style-type: none;
   margin: 30px 0 0 0;
@@ -63,23 +67,8 @@ li.dropdown {
   z-index: 9;
 }
 
-.dropdown-content a {
-  float: none;
-  	color: #242424 !important;
-  	text-align: left !important;
-  	padding: 12px 16px;
-  	text-decoration: none;
-  	display: block;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1;}
-
-.dropdown:hover .dropdown-content {
-  	display: block;
-}
-
 .row {
-  margin: 7% auto 7% 22.5%;
+  margin: 4% auto;
 	display: flex;
   flex-direction: row;
   flex-wrap: row wrap;
@@ -88,7 +77,7 @@ li.dropdown {
 }
 
 .title{
-  width: 40%;
+  width: 50%;
   min-width: 260px;
   text-align: right;
   animation-name: titleLoad;
@@ -101,6 +90,7 @@ li.dropdown {
     opacity: 0;
     transform: translateY(6%);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -108,10 +98,10 @@ li.dropdown {
 }
 
 .headshot {
-  width: 30%;
+  width: 20%;
 }
 
-.headshot img {
+#headshot {
   width: 200px;
 }
 
@@ -129,8 +119,23 @@ h1 {
   margin: 20px 0px;
 }
 
+#about {
+  margin: 7% auto;
+  align-items: flex-start;
+}
+
+.row #photo{
+  width: 35%;
+  text-align: center;
+}
+
+.row #about-content {
+  width: 40%;
+  margin-right: 40px;
+}
+
 .card-row {
-	margin: 70px auto;
+	margin: 2% auto;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-evenly;
