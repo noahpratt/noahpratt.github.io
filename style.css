@@ -30,7 +30,6 @@ p {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
-  background: rgb(0,221,255);
   background: linear-gradient(90deg, rgba(0,221,255,1) 0%, rgba(9,91,121,1) 75%);
   top: 0;
   overflow: hidden;
@@ -45,30 +44,22 @@ p {
   text-decoration: none;
 }
 
-#menu li a:hover, .dropdown:hover .dropbtn {
+#menu li a:hover {
   background-color: #086385;
 }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
+.content {
+  max-width: 913px;
+  margin: auto;
 }
 
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 9;
+.photo {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .row {
-  margin: 4% auto;
+  margin: 10% auto;
 	display: flex;
   flex-direction: row;
   flex-wrap: row wrap;
@@ -102,14 +93,14 @@ li.dropdown {
 }
 
 #headshot {
-  width: 200px;
+  width: 250px;
 }
 
 .title h1 {
 	font-weight: 700;
 	font-size: 65px;
   color: #242424;
-  margin: 20px 0px;
+  margin: 10px 0px;
 }
 
 h1 {
@@ -117,6 +108,24 @@ h1 {
   font-size: 50px;
   color: #242424;
   margin: 20px 0px;
+}
+
+button {
+  margin: 20px auto;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 25px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+button:hover {
+  cursor: pointer;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 #about {
@@ -143,7 +152,7 @@ h1 {
 
 .card-row a{
 	text-decoration: none;
-	width: 22%;
+	width: 250px;
   min-width: 180px;
 	color: black;
 }
@@ -198,4 +207,14 @@ h2 {
 
 #content {
   margin: auto 50px;
+}
+
+.site-map {
+  margin: 20px auto;
+  background: #ebebeb;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: row wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
