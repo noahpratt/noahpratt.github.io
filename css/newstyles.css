@@ -85,6 +85,37 @@ header li {
 .title h1 {
   font-size: 3rem;
   margin: 0;
+  animation-name: titleLoad;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+}
+
+@keyframes titleLoad {
+  from {
+    opacity: 0;
+    transform: translateY(6%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* About --------------------------------------------------------------------------*/
+.about {
+  margin: 75px auto;
+  content: "";
+  clear: both;
+  display: table;
+}
+.about img {
+  width: 250px;
+  float: left;
+  margin: auto 50px;
+}
+.about h2 {
+  margin: 0;
 }
 
 /* Projects ------------------------------------------------------------------*/
