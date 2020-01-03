@@ -32,6 +32,9 @@ section {
   box-shadow: 0 4px 5px 0 rgba(0,0,0,0.4);
   transition: 0.3s;
 }
+section h1 {
+  font-size: 2rem;
+}
 
 /* Navigation ----------------------------------------------------------------*/
 header {
@@ -40,8 +43,8 @@ header {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  background: rgb(0,159,193);
-  background: linear-gradient(90deg, rgba(0,159,193,1) 0%, rgba(0,85,128,1) 100%);
+  background: rgb(255,145,0);
+background: linear-gradient(90deg, rgba(255,145,0,1) 35%, rgba(171,0,21,1) 100%);
   padding: 0 40px;
   margin: 40px auto 0;
 }
@@ -85,6 +88,37 @@ header li {
 .title h1 {
   font-size: 3rem;
   margin: 0;
+  animation-name: titleLoad;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1s;
+}
+
+@keyframes titleLoad {
+  from {
+    opacity: 0;
+    transform: translateY(6%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* About --------------------------------------------------------------------------*/
+.about {
+  margin: 75px auto;
+  content: "";
+  clear: both;
+  display: table;
+}
+.about img {
+  width: 250px;
+  float: left;
+  margin: auto 50px;
+}
+.about h2 {
+  margin: 0;
 }
 
 /* Projects ------------------------------------------------------------------*/
@@ -126,4 +160,27 @@ footer img {
 }
 #icon-attribution {
   font-size: 10px;
+}
+
+/* Showcase --------------------------------------------------------------------------------------*/
+.showcase {
+  width: 500px;
+  background: yellow;
+  margin: 0 auto;
+}
+.showcase-nav {
+  position:fixed;
+  top: 30%;
+  line-height: 2;
+}
+.showcase-nav a {
+  text-decoration: none;
+  color: black;
+}
+.showcase-nav a:hover {
+  text-decoration: underline;
+}
+.showcase img {
+  display: block;
+  width: 100%;
 }

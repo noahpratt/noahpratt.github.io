@@ -1,42 +1,71 @@
-<!DOCTYPE HTML>
-<html id="theHTML">
+<!doctype html>
+<html lang="en">
 <head>
     <title>Noah Pratt - Projects</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab|Source+Code+Pro" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="fullpage.css" />
-    <script type="text/javascript" src="fullpage.js"></script>
+    <link rel="stylesheet" href="newstyles.css">
 </head>
 <body>
+  <header>
+    <h1><a href="newindex.html">Noah Pratt</a></h1>
+    <ul>
+      <li><a href="about.html">About</a></li>
+      <li><a href="newindex.html#projects">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+  <main>
+    <ul class="showcase-nav">
+      <li><a href="project1.html#title">HOBY WLC</a></li>
+      <li><a href="project1.html#role">My role</a></li>
+      <li><a href="project1.html#challenge">Some Context</a></li>
+      <li><a href="project1.html#progress">What all I worked on</a></li>
+      <li><a href="project1.html#solution">The final products</a></li>
+      <li><a href="project1.html#lessons">Lessons learned</a></li>
+    </ul>
+    <article class="showcase">
+      <section id="title">
+        <h1>This is the title</h1>
+        <p>Here's a little paragraph about the project</p>
+        <img src="img/Photo_1.png">
+      </section>
 
-  <div id="fullpage">
-    <div class="section" data-tooltip="">
-      <h1 style="text-align: center">Welcome!</h1>
-      <!-- <p>Feb 2018—May 2018</p> -->
-      <!-- <ul>
-        <li>Guide customers through plans and packages offered</li>
-        <li>Endorse/up-sell promotions based around their needs and usage</li>
-        <li>Customer service, responding to questions and concerns</li>
-      </ul> -->
-    </div>
+      <section id="role">
+        <h2>What I did</h2>
+        <p>Here are all of the great things I did to help the project</p>
+      </section>
 
-    <div class="section" data-tooltip="HOBY WLC">
-	    <div class="slide">
+      <section id="challenge">
+        <h2>The challenge</h2>
+      </section>
+
+      <section id="progress">
+        <h2>Some of my progress</h2>
+      </section>
+
+      <section id="solution">
+        <h2>My Solution</h2>
+      </section>
+
+      <section id="lessons">
+        <h2>What I learned</h2>
+      </section>
+
+      <section>
+        <img src="img/Photo_1.png">
         <h1>HOBY WLC</h1>
         <h3>Design Manager</h3>
         <p>Chicago, IL. 2018-19</p>
-      </div>
-	    <div class="slide">
+
         <h3>Key Tasks:</h3>
         <ul>
           <li>Creating and maintaining Brand guidelines</li>
           <li>Designing ambassador guidebook, program guide, store items, and promotional materials</li>
           <li>Selling store items, managing inventory, organizing and analyzing data</li>
         </ul>
-      </div>
-	    <div class="slide"><p>It was hard work!</p></div>
-	    <div class="slide"><p>But I had lots of fun!</p></div>
-	  </div>
+	    <p>It was hard work!</p>
+	    <p>But I had lots of fun!</p>
+  </section>
 
     <div class="section" data-tooltip="Hack Harvard">
 	    <div class="slide">
@@ -126,50 +155,23 @@
       </div>
 	    <div class="slide"><p>It was hard work!</p></div>
 	    <div class="slide"><p>But I had lots of fun!</p></div>
-	  </div>
-  </div>
-
-  <ul id="menu" style="position: fixed">
-    <li class="menu-links"><a href="index.html">Home</a></li>
-    <li class="menu-links"><a href="about.html">About</a></li>
-    <li class="menu-links"><a href="projects.html">Projects</a></li>
-    <li class="menu-links"><a href="contact.html">Contact</a></li>
+	   </div>
+    </div>
+    <div style="display: inline-block">
+      <a href="newindex.html" class="btn">Return Home</a>
+      <a href="project2.html" class="btn">On to the next one!</a>
+    </div>
+  </article>
+</main>
+<footer>
+  <ul>
+    <li><a href="https://www.facebook.com/noahlkpratt"><img src="img/facebook_icon.png"></a></li>
+    <li><a href="https://www.instagram.com/noah_pratt/"><img src="img/instagram_icon.png"></a></li>
+    <li><a href="https://www.linkedin.com/in/noahpratt/"><img src="img/linkedin_icon.png"></a></li>
+    <li><a href="https://github.com/noahpratt"><img src="img/github_icon.png"></a></li>
   </ul>
 
-<script>
-
-  window.onload = function(){
-    var hello = document.getElementById("theHTML");
-    var why = hello.currentStyle || window.getComputedStyle(hello);
-
-    var dots = document.getElementById("fp-nav").style.marginLeft;
-    dots = why.marginLeft;
-  };
-
-  window.onresize = function(){
-    var hello = document.getElementById("theHTML");
-    var why = hello.currentStyle || window.getComputedStyle(hello);
-
-    var dots = document.getElementById("fp-nav").style.marginLeft;
-    dots = why.marginLeft;
-  };
-
-new fullpage('#fullpage', {
-  menu: '#menu',
-  autoScrolling:true,
-	scrollHorizontally: true,
-  scrollingSpeed: 500,
-  navigation: true,
-  navigationPosition: 'left',
-  slidesNavigation: true,
-  controlArrows: false,
-  continuousVertical: true,
-
-  showActiveTooltip: true,
-});
-
-//methods
-fullpage_api.setAllowScrolling(true);</script>
-
+  <div id="icon-attribution">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+</footer>
 </body>
 </html>
