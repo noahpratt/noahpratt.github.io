@@ -275,3 +275,19 @@ footer img {
   flex-wrap: nowrap;
   justify-content: space-around;
 }
+/* Contact -------------------------------------------------------------------*/
+
+.contact {
+  width: 900px;
+  height: 70vh;
+  margin: 0 auto;
+}
+.contact-content {
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
