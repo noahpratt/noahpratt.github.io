@@ -52,7 +52,7 @@ header {
   justify-content: space-between;
   background: linear-gradient(90deg, rgba(255,145,0,1) 35%, rgba(171,0,21,1) 100%);
   padding: 0 40px;
-  margin: 0 auto;
+  margin: 40px auto 0;
 }
 header h1 {
   font-size: 1.5rem;
@@ -83,9 +83,12 @@ header li {
   height: 100vh;
   padding-top: 40px;
 }
+.home-container header {
+  margin: 0 auto;
+}
 .title-container {
   max-width: 900px;
-  margin: 7rem auto;
+  margin: 25vh auto;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
