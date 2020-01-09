@@ -85,7 +85,7 @@ header li {
 }
 .title-container {
   max-width: 900px;
-  margin: 7rem auto;
+  margin: 25vh auto;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
