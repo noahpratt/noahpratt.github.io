@@ -43,7 +43,6 @@ main, footer {
 
 /* Navigation ----------------------------------------------------------------*/
 header {
-  height: 50px;
   max-width: 900px;
   display: flex;
   flex-direction: row;
@@ -55,13 +54,16 @@ header {
   margin: 40px auto 0;
 }
 header h1 {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   margin: 0.75rem 0;
 }
 header a {
   width: 200px;
   text-decoration: none;
   color: white;
+}
+#myLinks {
+  display: show;
 }
 header ul a:hover {
   text-decoration: underline;
@@ -76,6 +78,9 @@ header li {
   display: inline-block;
   list-style-type: none;
   padding: 0 10px;
+}
+.icon {
+  display: none;
 }
 
 /* Title ---------------------------------------------------------------------*/
@@ -99,9 +104,9 @@ header li {
   text-align: right;
   width: 500px;
 }
-.title img {
-  max-width: 250px;
-  max-height: 250px;
+.title-container img {
+  width: 250px;
+  height: 250px;
 }
 .title h1 {
   font-size: 3rem;
@@ -212,7 +217,7 @@ header li {
   margin: 0;
 }
 .project-container:nth-of-type(even) img {
-  float:right;
+  float: right;
   margin-right: 0;
   margin-left: 50px;
 }
@@ -293,4 +298,101 @@ footer img {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+}
+
+/* Responsive ----------------------------------------------------------------*/
+
+@media screen and (max-device-width: 967px) {
+  .title {
+    padding: 0 40px;
+  }
+  .title-content {
+    width: 50%;
+  }
+  .projects h1 {
+    margin: 20px 0;
+    padding: 0 40px;
+    text-align: center;
+  }
+  .project-container {
+    padding: 100px 40px;
+  }
+  footer {
+    padding: 0 40px;
+  }
+}
+@media screen and (max-device-width: 688px) {
+  .title-container {
+    flex-direction: column-reverse;
+    margin: 5vh auto;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .title-container img {
+    width: 60%;
+    height: 60%;
+    margin-bottom: 40px;
+  }
+  .title-content {
+    width: 100%;
+  }
+  .title-content h1 {
+    text-align: center;
+  }
+  .title-content p {
+    text-align: left;
+  }
+}
+@media screen and (max-device-width: 600px) {
+  header {
+    overflow: hidden;
+    position: relative;
+    display: block;
+  }
+  header #myLinks {
+    display: none;
+  }
+  #myLinks a {
+    padding: 20px 40px;
+  }
+  header a {
+    display: block;
+    padding: 40px;
+    font-size: 3rem;
+  }
+  .icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 50px;
+  }
+  header h1 {
+    font-size: 5rem;
+  }
+  .title-content h1 {
+    font-size: 7rem;
+  }
+  .title-content p {
+    font-size: 3rem;
+  }
+  .arrow img {
+    width: 200%;
+  }
+  .project-container {
+    padding: 75px 30px;
+  }
+  .project-item img {
+    float: none !important;
+    display: block;
+    margin: 0 auto 80px !important;
+    width: 75%;
+    height: 75%;
+  }
+  .project-item {
+    display: block;
+  }
+  .project-content {
+    text-align: left !important;
+  }
 }
