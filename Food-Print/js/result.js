@@ -17,7 +17,7 @@ var JSONarr = [
   { "cheese": "13.5"},
   { "rye": "1.06"},
   { "cream": "6.47"}
-]
+];
     resultsArray = JSON.parse(JSONarr);
 
     var resultsTable = document.createElement("TABLE");
