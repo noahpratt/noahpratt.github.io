@@ -154,7 +154,7 @@ label:hover, button:hover {
     height: 5em;
   }
   label img {
-    width: 50px;
+    width: 50%;
     height: 40px;
   }
   .reset-button {
