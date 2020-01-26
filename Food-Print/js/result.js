@@ -5,8 +5,8 @@ let resultTotal = document.getElementById("resultsTotal");
 // resultRequest.onreadystatechange = function() {
 //   if (this.readyState == 4 && this.status == 200) {
 var JSONarr = [
-  {"milk": 1.3693549999999999},
-  {"bananas": 0.672615},
+  {"milk": "1.3693549999999999"},
+  {"bananas": "0.672615"},
   {"oil": "2.58"},
   {"margarine": "4.84"},
   { "cereal": "1.8"},
