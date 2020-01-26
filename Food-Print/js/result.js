@@ -22,7 +22,7 @@ resultRequest.onreadystatechange = function() {
     resultTotal.innerHTML += carbonSum;
   }
 };
-resultRequest.open("GET", "result.txt", true);
+resultRequest.open("GET", "../result.txt", true);
 resultRequest.send();
 
 // document.addEventListener('keydown', keyDownHandler, false);
