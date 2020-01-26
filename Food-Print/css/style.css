@@ -127,7 +127,7 @@ label:hover, button:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 500px) {
+@media all and (max-device-width: 500px) {
   .home-flex {
     display: block;
   }
