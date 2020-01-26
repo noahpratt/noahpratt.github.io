@@ -6,20 +6,7 @@ let resultTotal = document.getElementById("resultsTotal");
 //   if (this.readyState == 4 && this.status == 200) {
 
 
-    resultsArray = JSON.parse('
-      {"milk": "1.3693549999999999"},
-      {"bananas": "0.672615"},
-      {"oil": "2.58"},
-      {"margarine": "4.84"},
-      { "cereal": "1.8"},
-      { "butter": "12.67"},
-      { "spinach": "1.02"},
-      { "artichoke": "0.78"},
-      { "sauce": "0.83"},
-      { "cheese": "13.5"},
-      { "rye": "1.06"},
-      { "cream": "6.47"}'
-    );
+    resultsArray = JSON.parse('{"milk": "1.3693549999999999"},{"bananas": "0.672615"},{"oil": "2.58"},{"margarine": "4.84"},{"cereal": "1.8"},{"butter": "12.67"},{"spinach": "1.02"},{"artichoke": "0.78"},{"sauce": "0.83"},{"cheese": "13.5"},{"rye": "1.06"},{"cream": "6.47"}');
 
     var resultsTable = document.createElement("TABLE");
     var tableSpace = document.getElementById("tableContainer");
