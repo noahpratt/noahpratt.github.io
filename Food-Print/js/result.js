@@ -56,7 +56,7 @@ function checkResults(){
   }
 }
 
-let tableSpace = document.getElementById("tableContainer");
+//let tableSpace = document.getElementById("tableContainer");
 function inputResults(textArr, table) {
   var setRow = document.createElement("TR");
   for (var i = 0; i < textArr.length; i++) {
