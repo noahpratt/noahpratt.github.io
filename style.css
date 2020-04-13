@@ -37,29 +37,35 @@ section {
 section h1 {
   font-size: 2rem;
 }
-main, footer {
-  padding: auto 20px;
+a {
+  text-decoration: none;
 }
 
 /* Navigation ----------------------------------------------------------------*/
-header {
-  max-width: 900px;
+.header-container, #secondary-nav div {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(90deg, rgba(255,145,0,1) 35%, rgba(171,0,21,1) 100%);
   padding: 0 40px;
-  margin: 40px auto 0;
+  margin: 0 auto;
+}
+.header-container {
+  max-width: 900px;
+  height: 100px;
+}
+header {
+  height: 100px;
+  background-image: url(img/header.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 header h1 {
   font-size: 1.5em;
   margin: 0.75rem 0;
 }
-header a {
-  width: 200px;
-  text-decoration: none;
+.header-container a {
   color: white;
 }
 #myLinks {
@@ -82,18 +88,39 @@ header li {
 .icon {
   display: none;
 }
+#secondary-nav {
+  background-image: url(img/header-white.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  height: 100px;
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  transition: opacity .5s;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  z-index: 2;
+}
+#secondary-nav div {
+  width: 100%;
+}
+#secondary-nav h1 a {
+  color: #f07903;
+}
+#secondary-nav li a {
+  color: #cf3d0c;
+}
 
 /* Title ---------------------------------------------------------------------*/
-.home-container {
-  height: 100vh;
-  padding-top: 40px;
-}
-.home-container header {
-  margin: 0 auto;
-}
 .title-container {
-  max-width: 900px;
-  margin: 25vh auto;
+  max-width: 1250px;
+  height: 100vh;
+  margin: 0 auto;
+  position: relative;
+  top: -100px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -104,16 +131,16 @@ header li {
   text-align: right;
   width: 500px;
 }
-.title-container img {
-  width: 250px;
-  height: 250px;
-}
 .title h1 {
   font-size: 3rem;
   margin: 0;
   animation-name: titleLoad;
   animation-timing-function: ease-in-out;
   animation-duration: 1s;
+}
+.title-container img {
+  border-radius: 100%;
+  border: 5px solid #cf3d0c;
 }
 
 @keyframes titleLoad {
@@ -126,7 +153,6 @@ header li {
     transform: translateY(0);
   }
 }
-
 .arrow img {
   display: block;
   animation: scroll-animation 5s infinite;
@@ -224,25 +250,43 @@ header li {
 .project-container:nth-of-type(even) .project-content {
   text-align: right;
 }
+.offset:before {
+  display: block;
+  content: " ";
+  height: 100px;
+  margin-top: -100px;
+  visibility: hidden;
+}
 
 /* Footer --------------------------------------------------------------------*/
-footer {
-  margin-bottom: 75px;
+footer div:nth-child(1){
+  height: 100px;
+  background-image: url(img/footer.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+footer div:nth-child(2){
+  background-color: #565656;
+  height: 200px;
+}
+.footer-content{
   max-width: 900px;
-  margin: 50px auto;
+  margin: 0 auto;
 }
 footer ul {
+  margin: 0;
   padding: 0;
 }
 footer li {
   list-style-type: none;
-  display: inline-block;
+  margin-bottom: 10px;
 }
 footer img {
   width: 25px;
+  margin-right: 15px;
 }
-#icon-attribution {
-  font-size: 10px;
+footer li a {
+  color: white;
 }
 
 /* Showcase ------------------------------------------------------------------*/
