@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Noah Pratt - Projects</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png"
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Roboto+Slab|Source+Code+Pro" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159024784-1"></script>
@@ -9,19 +10,36 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        
+
         gtag('config', 'UA-159024784-1');
     </script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1><a href="index.html">Noah Pratt</a></h1>
-    <ul>
-      <li><a href="about.html">About</a></li>
-      <li><a href="index.html#projects">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <div id="secondary-nav">
+      <div style="max-width: 900px">
+        <h1><a href="index.html">Noah&nbsp;Pratt</a></h1>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="NoahPratt_Resume.pdf">Resume</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header-container">
+      <h1><a href="index.html">Noah&nbsp;Pratt</a></h1>
+      <ul id="myLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="NoahPratt_Resume.pdf">Resume</a></li>
+      </ul>
+      <a href="javascript:void(0);" class="icon" onClick="myFunction()">
+        <img src="img/hamburger.png">
+      </a>
+    </div>
   </header>
   <main class="showcase">
     <aside>
@@ -38,7 +56,7 @@
       <section id="title">
         <h1>UWaterloo Orientation 2019</h1>
         <p>The University of Waterloo Fall Orientation is the annual welcome week for around 2000 incoming first year students. As lead videographer, I supported the media team from the Student Success Office, responsible for capturing the events for all faculties.</p>
-        <img src="img/Photo_1.png">
+        <img src="https://via.placeholder.com/800">
       </section>
 
       <section id="details">
@@ -76,14 +94,36 @@
   </article>
 </main>
 <footer>
-  <ul>
-    <li><a href="https://www.facebook.com/noahlkpratt"><img src="img/facebook_icon.png"></a></li>
-    <li><a href="https://www.instagram.com/noah_pratt/"><img src="img/instagram_icon.png"></a></li>
-    <li><a href="https://www.linkedin.com/in/noahpratt/"><img src="img/linkedin_icon.png"></a></li>
-    <li><a href="https://github.com/noahpratt"><img src="img/github_icon.png"></a></li>
-  </ul>
-
-  <div id="icon-attribution">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  <div id="footer-start"></div>
+  <div class="footer-container">
+    <div class="footer-content">
+      <div>
+        <img id="initials" src="img/initials.png">
+        <p>Made from scratch by me!</p>
+      </div>
+      <div>
+        <h2>Looking for more?</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">More about me</a></li>
+          <li><a href="index.html#projects">Projects I've done</a></li>
+          <li><a href="contact.html">How to contact me</a></li>
+          <li><a href="NoahPratt_Resume.pdf">My resume</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <a href="https://www.facebook.com/noahlkpratt"><li><img src="img/icon/facebook_icon.png">Facebook</li></a>
+          <a href="https://www.instagram.com/noah_pratt/"><li><img src="img/icon/instagram_icon.png">Instagram</li></a>
+          <a href="https://twitter.com/Noah_Pratt"><li><img src="img/icon/twitter_icon.png">Twitter</li></a>
+          <a href="https://www.linkedin.com/in/noahpratt/"><li><img src="img/icon/linkedin_icon.png">LinkedIn</li></a>
+          <a href="https://github.com/noahpratt"><li><img src="img/icon/github_icon.png">GitHub</li></a>
+          <a href="https://devpost.com/noahlkpratt"><li><img src="img/icon/devpost_icon.png">Devpost</li></a>
+        </ul>
+      </div>
+    </div>
+  </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>

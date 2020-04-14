@@ -202,10 +202,12 @@ header li {
 .about {
   width: 900px;
   height: 70vh;
-  margin: 75px auto;
-  content: "";
-  clear: both;
-  display: table;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.about-content {
+  margin: 0 auto;
 }
 .about img {
   width: 250px;
