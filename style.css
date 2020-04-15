@@ -47,6 +47,7 @@ a:hover {
 }
 
 /* Navigation ----------------------------------------------------------------*/
+
 .header-container, #secondary-nav div {
   display: flex;
   flex-direction: row;
@@ -55,35 +56,19 @@ a:hover {
   justify-content: space-between;
   padding: 0 40px;
   margin: 0 auto;
-}
-.header-container {
   max-width: 1200px;
   height: 100px;
 }
 header {
-  height: 100px;
   background-image: url(img/header.png);
   background-position: center;
   background-repeat: no-repeat;
 }
-header h1 {
-  font-size: 1.5em;
-  margin: 0.75rem 0;
-}
 .header-container a {
   color: white;
 }
-#myLinks {
-  display: show;
-}
 header ul a:hover {
   text-decoration: underline;
-}
-header ul {
-  display: flex;
-  justify-content: flex-end;
-  /* width: 300px; */
-  padding: 0;
 }
 header li {
   display: inline-block;
@@ -98,9 +83,7 @@ header li {
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0;
-  height: 100px;
   width: 100%;
-  margin: 0 auto;
   position: fixed;
   transition: opacity .5s;
   display: flex;
@@ -110,7 +93,6 @@ header li {
   z-index: 2;
 }
 #secondary-nav div {
-  max-width: 1200px;
   width: 100%;
 }
 #secondary-nav h1 a {
@@ -433,36 +415,32 @@ footer a {
   #secondary-nav {
     display: none;
   }
-  header {
-    overflow: hidden;
-    position: relative;
+  .header-container {
+    background-image: none;
+    background-color: green;
+    height: 600px;
     display: block;
   }
-  header #myLinks {
-    display: none;
-  }
-  #myLinks a {
-    padding: 20px 40px;
+  #myLinks {
+    display: block;
   }
   header a {
-    display: block;
-    padding: 40px;
     font-size: 3rem;
   }
   .icon {
     display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 50px;
+    float: right;
+    padding: 25px;
   }
+
   header h1 {
     font-size: 5rem;
+    margin: 0;
   }
   .title-content h1 {
     font-size: 7rem;
   }
-  .title-content p {
+  .title-content p, .project-content p, .project-content h2, .project-content h3, .project-content a {
     font-size: 3rem;
   }
   .arrow img {
