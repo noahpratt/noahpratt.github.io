@@ -82,7 +82,7 @@ header ul a:hover {
 header ul {
   display: flex;
   justify-content: flex-end;
-  width: 300px;
+  /* width: 300px; */
   padding: 0;
 }
 header li {
@@ -398,6 +398,7 @@ footer a {
     margin: 20px 0;
     padding: 0 40px;
     text-align: center;
+    font-size: 4rem;
   }
   .project-container {
     padding: 100px 40px;
@@ -409,13 +410,13 @@ footer a {
 @media screen and (max-device-width: 688px) {
   .title-container {
     flex-direction: column-reverse;
-    margin: 5vh auto;
+    margin: 10vh auto 10vh;
+    height: 80vh;
     padding-left: 10%;
     padding-right: 10%;
   }
   .title-container img {
-    width: 60%;
-    height: 60%;
+    width: 100%;
     margin-bottom: 40px;
   }
   .title-content {
@@ -429,6 +430,9 @@ footer a {
   }
 }
 @media screen and (max-device-width: 600px) {
+  #secondary-nav {
+    display: none;
+  }
   header {
     overflow: hidden;
     position: relative;
@@ -481,10 +485,3 @@ footer a {
     text-align: left !important;
   }
 }
-
-/* @media screen and (max-width: 1140px) {
-  .showcase {
-    display: flex;
-    flex-direction: column;
-  }
-} */
