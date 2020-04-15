@@ -1,15 +1,3 @@
-// function myFunction() {
-//   var x = document.getElementById("myLinks").children;
-//   for(i in x) {
-//     if (x[i].style.display === "block") {
-//       x[i].style.display = "none";
-//     } else {
-//       x[i].style.display = "block";
-//       x[i].style.float = "none";
-//     }
-//   }
-// }
-
 function myFunction() {
   var x = document.getElementById("navBar");
   if (x.className === "header-container") {
