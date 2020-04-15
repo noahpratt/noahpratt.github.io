@@ -57,7 +57,7 @@ a:hover {
   margin: 0 auto;
 }
 .header-container {
-  max-width: 900px;
+  max-width: 1200px;
   height: 100px;
 }
 header {
@@ -110,6 +110,7 @@ header li {
   z-index: 2;
 }
 #secondary-nav div {
+  max-width: 1200px;
   width: 100%;
 }
 #secondary-nav h1 a {
@@ -330,24 +331,28 @@ footer a {
 
 /* Showcase ------------------------------------------------------------------*/
 .showcase {
-  width: 900px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  wrap: nowrap;
-  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
 }
 .showcase article {
-  width: 650px;
-  background: rgba(0,0,0,.05);
+  max-width: 700px;
+  margin: 0 auto;
 }
 .showcase img {
   margin: 30px auto;
 }
-.showcase-nav {
-  position: fixed;
-  top: 30%;
+.showcase aside {
   line-height: 2;
+  position: relative;
+  top: 0;
+  height: 250px;
+}
+.showcase-nav {
+  margin: 0;
+  align-self: center;
 }
 .showcase-nav a {
   text-decoration: none;
@@ -476,3 +481,10 @@ footer a {
     text-align: left !important;
   }
 }
+
+/* @media screen and (max-width: 1140px) {
+  .showcase {
+    display: flex;
+    flex-direction: column;
+  }
+} */
