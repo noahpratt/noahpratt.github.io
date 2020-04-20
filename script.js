@@ -1,9 +1,9 @@
 function myFunction() {
-  var x = document.getElementById("navBar");
-  if (x.className === "header-container") {
-    x.className += " responsive";
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
   } else {
-    x.className = "header-container"
+    x.style.display = "block"
   }
 }
 

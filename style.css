@@ -54,10 +54,17 @@ a:hover {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 0 40px;
   margin: 0 auto;
   max-width: 1200px;
   height: 100px;
+}
+.header-links {
+  text-align: right;
+}
+.header-links a {
+  padding: 0 10px;
 }
 header {
   background-image: url(img/header.png);
@@ -67,7 +74,7 @@ header {
 .header-container a {
   color: white;
 }
-header ul a:hover {
+.header-links a:hover {
   text-decoration: underline;
 }
 header li {
@@ -105,10 +112,8 @@ header li {
 /* Title ---------------------------------------------------------------------*/
 .title-container {
   max-width: 1250px;
-  height: 100vh;
+  height: 90vh;
   margin: 0 auto;
-  position: relative;
-  top: -100px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -195,7 +200,7 @@ header li {
 .about img {
   width: 250px;
   float: left;
-  margin: auto 50px;
+  margin-right: 50px;
 }
 .about h2 {
   margin: 0;
@@ -417,13 +422,25 @@ footer a {
   }
   .header-container {
     background-image: none;
-    background-color: green;
+    background-color: #f07903;
     display: block;
-    height: 260px;
-    text-align: center;
+    height: auto;
   }
-  .header-container ul {
-    padding: 0;
+  .header-links {
+    width: 100%;
+    display: none;
+    line-height: 2;
+    padding-bottom: 30px;
+  }
+  .header-links a {
+    text-align: right;
+    display: block;
+  }
+  .header-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 30px;
   }
   #logo {
     font-size: 5rem;
@@ -435,6 +452,15 @@ footer a {
     font-size: 7em;
     margin: 0;
   }
+  .icon {
+    display: block;
+    height: 74px;
+    width: 20%;
+    text-align: right;
+  }
+
+
+
   .title-content h1 {
     font-size: 7rem;
   }
