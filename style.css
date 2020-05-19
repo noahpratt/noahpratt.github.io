@@ -231,7 +231,7 @@ header li {
   clear: both;
   display: table;
 }
-.project-item img {
+.project-item-img {
   width: 250px;
   height: 250px;
   float: left;
@@ -254,6 +254,23 @@ header li {
   height: 100px;
   margin-top: -100px;
   visibility: hidden;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+
+.WLC-showcase {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.WLC-showcase div {
+  width: 30%;
+}
+.WLC-showcase div img {
+  width: 100%;
+  border-radius: 5px;
 }
 
 /* Footer --------------------------------------------------------------------*/
