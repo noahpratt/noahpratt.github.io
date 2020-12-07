@@ -190,7 +190,7 @@ header li {
 
 /* About ---------------------------------------------------------------------*/
 .about {
-  width: 900px;
+  max-width: 900px;
   margin: 0 auto 75px;
 }
 .about h1 {
@@ -198,10 +198,14 @@ header li {
 }
 .about-content {
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 100px 50px;
+  align-items: center;
+  padding: 20px;
 }
 .about img {
-  float: left;
-  margin-right: 50px;
+  width: 100%;
 }
 .about h2 {
   margin: 0;
@@ -521,11 +525,20 @@ footer a {
     justify-self: center;
     align-self: start;
   }
-  .project-grid {
+  .project-grid, .about-content {
     display: block;
   }
   .project-grid-item {
     margin-bottom: 50px;
+  }
+  .about-content img {
+    margin-bottom: 20px;
+  }
+  .about-content div {
+    margin-bottom: 75px;
+  }
+  .about-content h2 {
+    text-align: center;
   }
   .footer-content {
     display: block;
