@@ -525,10 +525,10 @@ footer a {
     justify-self: center;
     align-self: start;
   }
-  .project-grid, .about-content {
+  .project-grid, .extra-projects, .about-content {
     display: block;
   }
-  .project-grid-item {
+  .project-grid-item, .project-secondary-item {
     margin-bottom: 50px;
   }
   .about-content img {
@@ -539,6 +539,20 @@ footer a {
   }
   .about-content h2 {
     text-align: center;
+  }
+  .about img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .about img:nth-of-type(1) {
+    object-position: 50% 70%;
+  }
+  .about img:nth-of-type(2) {
+    object-position: 50% 37%;
+  }
+  .about img:nth-of-type(3) {
+    object-position: 50% 21%;
   }
   .footer-content {
     display: block;
