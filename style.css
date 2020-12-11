@@ -405,6 +405,19 @@ footer a {
   height: 15px;
   transform: rotate(180deg);
 }
+.flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 20px 0;
+  grid-column-gap: 20px;
+}
+.flex img {
+  margin: 0 auto !important;
+  max-width: 75%;
+}
+.flex h4 {
+  text-align: center;
+}
 /* Contact -------------------------------------------------------------------*/
 
 .contact {
@@ -714,7 +727,7 @@ footer a {
     margin: 1.5em auto;
     font-size: 60px;
   }
-  .project-grid, .extra-projects {
+  .project-grid, .extra-projects, .about-content {
     display: block;
   }
   .project-grid-item, .project-secondary-item {
@@ -820,5 +833,28 @@ footer a {
     font-size: 55px;
     padding: 30px 25px;
     border: 1px solid gray;
+  }
+  .about-content img {
+    margin-bottom: 20px;
+  }
+  .about-content div {
+    margin-bottom: 100px;
+  }
+  .about-content h2 {
+    text-align: center;
+  }
+  .about img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+  .about img:nth-of-type(1) {
+    object-position: 50% 65%;
+  }
+  .about img:nth-of-type(2) {
+    object-position: 50% 37%;
+  }
+  .about img:nth-of-type(3) {
+    object-position: 50% 25%;
   }
 }
