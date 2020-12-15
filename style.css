@@ -418,6 +418,11 @@ footer a {
 .flex h4 {
   text-align: center;
 }
+.trualta-video {
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+}
 /* Contact -------------------------------------------------------------------*/
 
 .contact {
@@ -460,6 +465,9 @@ footer a {
   }
   .showcase {
     grid-template-columns: 1fr 2fr;
+  }
+  .trualta-video {
+    height:300px;
   }
   .return-button {
     left: 50px;
@@ -580,6 +588,14 @@ footer a {
   }
   .showcase {
     display: block;
+  }
+}
+@media (max-width: 580px) {
+  #trualta-flex {
+    display: block;
+  }
+  .trualta-video {
+    height: 200px;
   }
 }
 @media only screen and (device-width: 768px) {
@@ -856,5 +872,14 @@ footer a {
   }
   .about img:nth-of-type(3) {
     object-position: 50% 25%;
+  }
+  #trualta-flex {
+    display: block;
+  }
+  .showcase p {
+    margin-bottom: 40px;
+  }
+  .showcase article img {
+    margin-bottom: 75px !important;
   }
 }
