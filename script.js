@@ -15,6 +15,11 @@ for(let i = 0; i < links.length; i++) {
  });
 };
 
+var btn = document.getElementById("orientation-button");
+btn.addEventListener("click", function() {
+  window.location = this.dataset.link;
+});
+
 
 window.onload = function() {checkScroll()};
 window.onscroll = function() {checkScroll()};
