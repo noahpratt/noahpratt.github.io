@@ -8,18 +8,12 @@ function myFunction() {
   }
 }
 
-var links = document.getElementsByClassName("project-grid-item");
+var links = document.getElementsByClassName("project-link");
 for(let i = 0; i < links.length; i++) {
  links[i].addEventListener("click", function(){
    window.location = this.dataset.link;
  });
 };
-
-var btn = document.getElementById("orientation-button");
-btn.addEventListener("click", function() {
-  window.location = this.dataset.link;
-});
-
 
 window.onload = function() {checkScroll()};
 window.onscroll = function() {checkScroll()};
