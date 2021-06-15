@@ -1,8 +1,12 @@
-function preloadImage("img/index/flip.gif")
-{
+
+var gifSRC = "img/index/flip.gif"
+
+function preloadImage(url){
     var img=new Image();
     img.src=url;
 };
+
+preloadImage(gifSRC);
 
 let headshot = document.getElementById("portrait");
 headshot.addEventListener('mouseover', function() {
@@ -45,16 +49,10 @@ function startGame() {
         let amp = (Math.random()+1)*20;
         let freq = (Math.random()+1)*40;
         let w = 30 + Math.random() * 20;
+        let speedX = 2;
         let x = Math.random() * (canvas.width + 500)-250;
         let y = amp + (Math.random() * (canvas.height-40-amp*2));
-        ballArray.push(new Ball(
-            x,
-            y,
-            w,
-            2,
-            amp,
-            freq
-        ));
+        ballArray.push(new Ball(x, y, w, speedX, amp, freq));
     }
     myTimer = setInterval(gameLoop, 16);
 }
@@ -91,8 +89,6 @@ class Ball {
     update() {
         if (this.x > canvas.width) {
             this.x = (Math.random() * -150)-this.w;
-            console.log(this.x);
-            console.log(this.y);
         }
 
 		this.x += this.speedX;
@@ -109,7 +105,6 @@ class Ball {
 let frequency = 0;
 for(i=0; i<15;i++) {
     freq = (Math.random/2+1)*20;
-    console.log(freq);
 }
 
 const ballArray = [];
