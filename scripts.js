@@ -1,3 +1,9 @@
+function preloadImage("img/index/flip.gif")
+{
+    var img=new Image();
+    img.src=url;
+};
+
 let headshot = document.getElementById("portrait");
 headshot.addEventListener('mouseover', function() {
     headshot.src = "img/index/flip.gif";
@@ -42,9 +48,9 @@ function startGame() {
         let x = Math.random() * (canvas.width + 500)-250;
         let y = amp + (Math.random() * (canvas.height-40-amp*2));
         ballArray.push(new Ball(
-            x, 
-            y, 
-            w, 
+            x,
+            y,
+            w,
             2,
             amp,
             freq
@@ -92,8 +98,8 @@ class Ball {
 		this.x += this.speedX;
 
         this.y = this.height + this.amp * Math.sin(this.x/this.freq);
-        
-        
+
+
 	}
 	draw() {
 		ctx.drawImage(smile, this.x, this.y, this.w, this.h);
