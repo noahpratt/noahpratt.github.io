@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<HTML>
+<head>
+  <title>Journey of the Prairie King</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="JOPK-Style.css">
+  <link rel="shortcut icon" type="image/png" href="../img/index/smile.png"/>
+</head>
+<body>
+  <h1>Howdy!</h1>
+  <div class="content">
+    <canvas id="myCanvas"></canvas>
+    <div class="game-info">
+      <h2>Welcome to Journey of the Pairie King!</h2>
+      <p>This is a game I coded a couple years back for class to practice game design and challenge my coding abilities.</p>
+      <p>Journey of the Prairie King is a mini-game from the 2016 game, <i>Stardew Valley</i>.</p>
+      <p>In this game, you play as the hero on a valiant quest to save their village from attacking enemies!</p>
+      <p>Modeled after twin-stick arcade machines, Journey of the Prairie King is a top-down shooter, and a throwback to the classics of arcades.</p><br>
+      <a href="../index.html" id="back-btn">Back Home</a>
+    </div>
+    <div class="instructions">
+      <div id="instructions">
+        <p>Here are some instructions on how to play the game:</p>
+        <ul>
+          <li>The WASD keys move your player around the screen</li>
+          <li>The arrow keys shoot bullets</li>
+          <li>Enemies will come towards you from all sides of the field</li>
+        </ul>
+        <p>If you can survive long enough, you'll win!</p>
+      </div>
+      <br>
+      <button id="instructionsButton" onClick="showInstructions()">See Instructions</button>
+      <button id="resumeGameButton" onClick="resumeGame()">Resume Game</button>
+    </div>
+  </div>
+  <audio id="music"><source src="JOPK-sound/JOPK_music.mp3" type="audio/mpeg"></audio>
+  <audio id="bang"><source src = "JOPK-sound/pop.mp3" type="audio/mpeg"></audio>
+  <audio id="steps"><source src="JOPK-sound/steps.mp3" type="audio/mpeg"></audio>
+  <audio id="start"><source src="JOPK-sound/start.mp3" type="audio/mpeg"></audio>
+  <audio id="death"><source src="JOPK-sound/death.mp3" type="audio/mpeg"></audio>
+  <audio id="win"><source src="JOPK-sound/win.mp3" type="audio/mpeg"></audio>
+
+  <script src="JOPK-script.js"></script>
+</body>
+</html>

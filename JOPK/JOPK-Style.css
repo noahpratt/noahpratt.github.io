@@ -1,0 +1,83 @@
+body {
+  background: #252525;
+  color: #aaaaaa;
+  margin: auto;
+  padding: 25px;
+}
+
+.content {
+  width: 900px;
+  margin: 0px auto;
+}
+
+canvas {
+  border: 1px solid #aaaaaa;
+}
+
+#back-btn {
+  background-color: #aaaaaa;
+  padding: 10px 15px;
+  color: #000000;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+#back-btn:hover {
+  background-color: #c4c4c4;
+}
+
+button {
+    background-color: #aaaaaa;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+h1 {
+  font-family: 'VT323', monospace;
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'VT323', monospace;
+  font-size: 28px;
+  margin: 15px auto;
+}
+
+p, li, button {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+.game-info {
+  width: 430px;
+  padding: 30px 5px;
+  float: right;
+}
+
+.instructions {
+  margin: auto 25px;
+}
+
+@media screen and (max-width: 750px) {
+  .content {
+    width: 430px;
+  }
+
+  canvas {
+    margin: 0px 14px;
+  }
+
+  .game-info {
+    padding: 10px 5px;
+    width: 100%;
+    margin: auto;
+    float: none;
+  }
+
+  .instructions {
+    width: 400px;
+    margin: auto;
+  }
+}
