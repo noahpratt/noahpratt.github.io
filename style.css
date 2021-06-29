@@ -411,7 +411,26 @@ table {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-
+.proto-btn {
+  display: block;
+  width: 400px;
+  margin: 20px auto;
+  padding: 15px 20px;
+  border: 1px solid #d66b00;
+  background-color: #fdfaf7;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+  transition: .2s;
+}
+.proto-btn:hover {
+  background-color: #d66b00;
+  color: white;
+}
+.proto-btn:active {
+  background-color: #C06000;
+  color: white;
+}
 
 /* RESPONSIVE -------------------------------------------------*/
 /* -----------------------------------------------------*/
