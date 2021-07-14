@@ -254,6 +254,7 @@ footer h1 {
 }
 .showcase-main article {
     margin: 0 50px;
+    line-height: 1.75;
 }
 .showcase-intro h1 {
     font-size: 4em;
