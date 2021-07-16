@@ -246,7 +246,7 @@ footer h1 {
 
 /* SHOWCASE -------------------------------------------------- */
 .showcase-main {
-    /* max-width: 1000px; */
+    max-width: 1000px;
     margin: 0 auto;
 }
 .showcase-intro p {
@@ -483,9 +483,9 @@ table {
         max-width: 400px;
         margin: 0 auto;
     }
-    .showcase-main {
+    /* .showcase-main {
       max-width: 1000px;
-    }
+    } */
 }
 
 /* iPhone -----------------------------------------------------*/
