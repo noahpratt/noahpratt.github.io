@@ -203,7 +203,7 @@ canvas {
 #portrait {
     display: block;
     border-radius: 50%;
-    max-width: 350px;
+
     justify-self: center;
     box-shadow: 0px 3px 10px rgb(122, 122, 122);
 }
@@ -220,7 +220,7 @@ canvas {
 
 /* FOOTER -----------------------------------------------------*/
 footer {
-    height: 400px;
+    /* height: 400px; */
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -439,9 +439,7 @@ table {
     .intro {
         /* min-height: 800px; */
     }
-    .about-content {
-        max-height: 400px;
-    }
+    max-width: 350px;
 }
 
 /* -----------------------------------------------------*/
@@ -514,5 +512,32 @@ table {
     }
     .prj-grid {
         grid-template-columns: 1fr;
+    }
+    .about-content {
+      display: block;
+      margin: 0 auto;
+      /* text-align: center; */
+    }
+    #portrait {
+      margin: 0 auto;
+      width: 80%;
+      max-width: 1000px;
+    }
+    footer {
+      margin-bottom: 100px;
+    }
+    footer h1 {
+      margin: 0;
+      padding: 0 5%;
+    }
+    .contact {
+      width: 50%;
+      margin: 75px auto;
+    }
+    .contact img {
+      width: 75px;
+    }
+    #hero {
+      display: none;
     }
 }
